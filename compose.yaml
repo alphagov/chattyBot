@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3100:3100
+    expose:
+      - 3100
+    entrypoint: yarn start-server
+    
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - ${PORT:-5173}:${PORT:-5173}
+    expose: 
+      - 5173
+    entrypoint: yarn start
+    depends_on:
+      - backend
