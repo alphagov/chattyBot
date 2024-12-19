@@ -1,3 +1,7 @@
+# chattyBot - GOV.UK GIFT Week experiment 2024
+
+**Archived**
+
 ## Getting Started
 
 To get started, follow the below steps:
@@ -32,3 +36,7 @@ Additional scripts are provided to prepare the app for production
 
 - `yarn build` — This will output a production build of the frontend app in the `dist` directory.
 - `yarn preview` — This will run the production build of the frontend app locally with a default port of `5173` (_note_: this will not work if you haven't generated the production build yet).
+
+# Licence
+
+[MIT License](LICENCE)
